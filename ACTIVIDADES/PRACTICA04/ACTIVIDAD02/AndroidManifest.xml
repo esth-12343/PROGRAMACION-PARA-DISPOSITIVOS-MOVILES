@@ -1,0 +1,11 @@
+<application ... >
+    <!-- Activities de la ParteA -->
+    <activity android:name=".ResumenActivity"/>
+    <activity android:name=".FormularioActivity"/>
+
+    <!-- Activities de la ParteB -->
+    <activity android:name=".OpcionesActivity"/>
+    <activity android:name=".EditorActivity">
+        <!-- Si EditorActivity debe ser lanzable por defecto, podrías marcarla MAIN -->
+    </activity>
+</application>
