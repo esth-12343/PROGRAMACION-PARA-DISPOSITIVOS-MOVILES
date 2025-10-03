@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.practica5.InicioFragment"
+        android:label="Inicio">
+        <action
+            android:id="@+id/action_inicio_to_comida"
+            app:destination="@id/seleccionComidaFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/seleccionComidaFragment"
+        android:name="com.example.practica5.SeleccionComidaFragment"
+        android:label="Seleccionar Comida">
+        <action
+            android:id="@+id/action_comida_to_extras"
+            app:destination="@id/seleccionExtrasFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/seleccionExtrasFragment"
+        android:name="com.example.practica5.SeleccionExtrasFragment"
+        android:label="Seleccionar Extras">
+        <action
+            android:id="@+id/action_extras_to_resumen"
+            app:destination="@id/resumenPedidoFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/resumenPedidoFragment"
+        android:name="com.example.practica5.ResumenPedidoFragment"
+        android:label="Resumen Pedido"/>
+</navigation>

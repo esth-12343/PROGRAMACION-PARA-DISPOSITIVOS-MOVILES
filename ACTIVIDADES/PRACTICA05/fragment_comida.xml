@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radioGroupComida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:text="Pizza" android:id="@+id/rbPizza"/>
+        <RadioButton android:text="Hamburguesa" android:id="@+id/rbHamburguesa"/>
+        <RadioButton android:text="Ensalada" android:id="@+id/rbEnsalada"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSiguienteComida"
+        android:text="Siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
